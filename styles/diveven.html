@@ -1,0 +1,39 @@
+<style>
+    .saludo{
+        display: none;
+    }
+
+    .mostrar-contenedor{
+        display: flex;
+        background: red;
+    }
+</style>
+
+<html>
+    <label for="buscar"></label>
+    <button class="boton-mostrar" type="search" name="buscar">presionar</button>
+    <custom-element>
+        <div class="saludo">
+            hola
+        </div>
+    </custom-elemen>
+</html>
+
+<script>
+    class saludo extends HTMLElement{
+        constructor(){
+            super();
+        }
+
+        connectedCallback(){
+            const contenedor = this.querySelector(".saludo");
+            const boton = document.querySelector(".boton-mostrar");
+            boton.addEventListener("click", function(){
+                contenedor.classList.toggle("mostrar-contenedor");
+            });
+
+        }
+    }
+
+    customElements.define("custom-element", saludo)
+</script>

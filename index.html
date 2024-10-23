@@ -1,0 +1,264 @@
+<style>
+    body {
+        margin: 0px;
+    }
+
+    .menu {
+        box-shadow: 0 0 10px #00000061;
+        padding: 19px;
+        display: flex;
+        margin: 0px;
+    }
+
+
+    .boton-menu {
+        background: none;
+        border: none;
+    }
+
+    .logotipo {
+        margin: auto;
+    }
+
+    .logotipo-letra {
+        background: none;
+        margin: 2px;
+        color: red;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .logotipo-letra-signo {
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .imagen-busqueda {
+        width: 20px;
+        height: 20px;
+        margin-right: 30px;
+    }
+
+    .boton-cerrar {
+        background: none;
+        border-radius: 20%;
+    }
+
+    .titulo-buscar {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+    .imagen-producto {
+        width: 340px;
+        background: gray;
+    }
+
+    .contenedor-producto {
+        display: flex;
+    }
+
+    .contenedor-titulo-producto {
+        display: block;
+    }
+
+    .contenedor-lista-producto{
+        background: rgb(203, 203, 203);
+        border-radius: 18px;
+        box-shadow: 0 0 10px #00000043;
+        align-items: center;
+    }
+</style>
+
+
+<custom-menu-search>
+    <div class="menu">
+        <button class="boton-menu">≡</button>
+        <span class="logotipo">
+            <span class="logotipo-letra">Media</span>
+            <span class="logotipo-letra-signo">ↈ</span>
+            <span class="logotipo-letra">Markt</span>
+        </span>
+        <img class="imagen-busqueda" src="https://cdn-icons-png.flaticon.com/128/2319/2319177.png" alt="">
+    </div>
+    <dialog  style="width: 600px; ;border: none; border-radius: 2%; box-shadow: 0 0 10px #00000061;">
+        <button class="boton-cerrar">X</button>
+        <h1 class="titulo-buscar">Search</h1>
+        <label for="busqueda"></label>
+        <input type="search" id="search-input" name="busqueda">
+        <template>
+            <li class="li-contenedor" style="list-style: none;">
+                <div style="display: flex;" class="contenedor-lista-producto">
+                    <img style="background: black; width: 200px;height: 200px;" class="imagen" src="" alt="">
+                    <div class="contenedor-detalles">
+                        <h3 class="precio">
+                            <a href="prducto.html?id={id}"></a>
+                        </h3>
+                        <h3 class="descripcion">Acerca de: </h3>
+                        <h3 class="nombre">Nombre:  </h3>
+                        <h3 class="fecha">Fecha:  </h3>
+                    </div>
+                </div>
+            </li>
+        </template>
+        <ul class="mostrar-resultados">
+        
+        </ul>
+    </dialog>
+</custom-menu-search>
+
+<main>
+    <custom-articles>
+        <div class="contenedor-producto">
+            <div class="contenedor-titulo-producto">
+                <h1>Nombre del producto</h1>
+                <img class="imagen-producto" src="" alt="">
+                <custom-time time="1666166150"></custom-time>
+            </div>
+            <div class="contenedor-description">
+                <p>
+                    Caracteristicas y descipcion del producto
+                </p>
+            </div>
+        </div>        
+    </custom-articles>
+</main>
+
+
+<script>
+    const article = [
+        {
+            "id": 1,
+            "image": "https://m.media-amazon.com/images/I/71AK3fy-Y1L._AC_SX679_.jpg",
+            "name": "Asus ROG Zephyrus G14 GA401QC",
+            "description": "Acerca de este producto Pantalla de 14 Quad HD 2560 x 1440 pixeles, 120Hz, IPS 300 nits Procesador AMD Ryzen 7 5800HS (8C/OctaCore 2.8 / 4.4GHz, 16MB) Memoria RAM de 16GB SO-DIMM DDR4 3200MHz Almacenamiento de 1TB SSD M.2 NVMe PCIe Tarjeta gráfica NVIDIA GeForce RTX 3050 4GB GDDR6Sin Sistema Operativo",
+            "price": "1,200€",
+            "dateAdded": "2023-11-01T10:00:00Z"
+        },
+        {
+            "id": 2,
+            "image": "https://m.media-amazon.com/images/I/81aUN5ADZoL._AC_SX425_.jpg",
+            "name": "JBL Auriculares inalámbricos circumaurales Live 770NC",
+            "description": "Acerca de este producto Sonido inmersivo: los potentes amplificadores de 40 mm te ofrecen un sonido inmersivo JBL Spatial Sound con el característico JBL Signature Sound, para un audio de calidadAíslate del entorno cuando quieras. Tú decides: concéntrate en tu música con la Cancelación Adaptativa de Ruido o utiliza la tecnología Smart Ambient para percibir los sonidos a tu alrededorTu música, sin interrupciones: disfruta de hasta 65 hrs de reproducción sin cables (con ANC desactivado) y de una carga completa en tan solo 2 hrs u obtén 4 hrs con una carga rápida de 5 minsFunciones prácticas: los auriculares Live 770NC son cómodos gracias a la banda de sujeción acolchada, te ofrecen una conexión multipunto y son compatibles con tu asistente de voz favoritoContenido del envío: 1x JBL Live 770NC, 1x cable de sonido, 1 x cable de carga tipo USB-C, 1x guía de inicio rápido y hoja de seguridad",
+            "price": "149.00€",
+            "dateAdded": "2023-12-10T12:00:00Z"
+        },
+        {
+            "id": 3,
+            "image": "https://m.media-amazon.com/images/I/61eU772eqgL._AC_SX522_.jpg",
+            "name": "Google Pixel 9 Pro",
+            "description": "Acerca de este producto Descubre Pixel 9 Pro y Pro XL. El Pixel más potente hasta la fecha, ahora en dos tamaños. Ha sido creado por Google y se ha diseñado para la IA. Colores originales, bordes pulidos y un acabado suave y mate. Es Pixel, pero con un diseño renovado. El sistema de cámara trasera triple de Pixel 9 Pro te permite conseguir primerísimos planos, selfies nítidos y colores intensos, incluso con poca luz. Tacha tus tareas como si nada, impulsa tu creatividad y recupera rápidamente información que hayas guardado. Pide ayuda a Gemini sobre cualquier cosa que veas en pantalla o en el mundo real.",
+            "price": "1,099€",
+            "dateAdded": "2024-01-20T15:00:00Z"
+        }
+    ]
+
+
+    temp = document.getElementsByTagName("template")[0];
+
+    class CustomMenu extends HTMLElement {
+        constructor() {
+            super();
+            this.article = article;
+        }
+
+        connectedCallback() {
+            const botonImagen = this.querySelector(".imagen-busqueda");
+            const mostrarBuscador = this.querySelector("dialog");
+            const cerrarBuscador = this.querySelector(".boton-cerrar");
+
+            botonImagen.addEventListener("click", () => {
+                mostrarBuscador.showModal();
+            });
+
+            cerrarBuscador.addEventListener("click", () => {
+                mostrarBuscador.close();
+            })
+
+            const inputSearch = this.querySelector("#search-input");
+            inputSearch.addEventListener("input", (event) => this.buscar(event));
+        }
+
+        buscar(event){
+            event.preventDefault();
+            const buscarResultados = this.querySelector("#search-input");
+            const argumentosBusqueda = buscarResultados.value
+            /* console.log(argumentosBusqueda); estamos haciendo 
+            debug para poder ver de una mejor manera los resultados
+            que se retorna*/
+            this.render(argumentosBusqueda);
+        }
+
+        render(argumentosBusqueda = ''){//parametro que recirbe lo escrito en el input
+            const busquedaArticulos = this.querySelector(".mostrar-resultados");
+            busquedaArticulos.innerHTML = '';
+            const filtrarBusqueda = this.article.filter(productos => productos.name.toLowerCase().includes(argumentosBusqueda.toLowerCase()));
+
+            const template = this.querySelector("template");
+            filtrarBusqueda.map(producto => {
+                const li = template.querySelector("li-contenedor").cloneNode(true);
+                li.querySelector(".contenedor-lista-producto .contenedor-detalles .precio a").textContent = producto.price;
+                li.querySelector(".contenedor-lista-producto .contenedor-detalles .nombre").textContent = producto.name;
+                li.querySelector(".contenedor-lista-producto .contenedor-detalles .descripcion").textContent = producto.description;
+                li.querySelector(".contenedor-lista-producto .contenedor-detalles .fecha").textContent = producto.dateAdded;
+
+                const enlace = li.querySelector('.contenedor-lista-prodcto .contenedor-detalles .precio a');
+                const href = enlace.href;
+                enlace.href = href.replace('{id}', article.id);
+                busquedaArticulos.appendChild(li);
+                
+            })
+        }
+    }
+    customElements.define("custom-menu-search", CustomMenu);
+</script>
+
+<script>
+    class Time extends HTMLElement {
+        constructor() {
+            super();
+        }
+
+        connectedCallback() {
+            this.render();
+            setInterval(() => this.render(), 1000);
+        }
+
+        render() {
+            const timeValue = this.getAttribute('time');
+            const realtime = timeValue ? new Date(Number(timeValue * 1000)).getTime() : Date.now();
+            //const realTime = timeValue ? new Date(Number(timeValue)).getTime() : Date.now();
+            /*usamos un operador ternario para que si timeValue tiene algun valor(fecha)
+            entonces lo convertimos a milisegundos con Number para que con el metod de la clase Date podamos obtener esa fecha los milisegundos transcurridos desde el 1 de Enero de 1970 a la fecha actua.
+            Por el contrario si no tiene valor, entonces realTime se le asigna el valor de la fecha actual en milisegundos trasncurridos desde el 1 de Enero de 1970 a la fecha actual*/
+            const timeNow = Date.now();
+            const diff = timeNow - realtime;
+
+            const seconds = Math.floor(diff / 1000) || 1;
+            const minutes = Math.floor(diff / (1000 * 60));
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const months = Math.floor(days / 30);
+            const years = Math.floor(months / 12);
+
+            let aux = '...';
+            if (years >= 1) {
+                aux = `Hace ${years} año${years > 1 ? 's' : ''}`;
+            } else if (months >= 1) {
+                aux = `Hace ${months} mes${months > 1 ? 'es' : ''}`;
+            } else if (days >= 1) {
+                aux = `Hace ${days} día${days > 1 ? 's' : ''}`;
+            } else if (hours >= 1) {
+                aux = `Hace ${hours} hora${hours > 1 ? 's' : ''}`;
+            } else if (minutes >= 1) {
+                aux = `Hace ${minutes} minuto${minutes > 1 ? 's' : ''}`;
+            } else if (seconds >= 1) {
+                aux = `Hace ${seconds} segundo${seconds > 1 ? 's' : ''}`;
+            }
+            this.textContent = aux;
+        }
+    }
+
+
+    customElements.define("custom-time", Time);
+</script>
