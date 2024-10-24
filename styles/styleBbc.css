@@ -188,3 +188,52 @@ body {
 .rotar {
     transform: rotate(180deg); /* Rotación de 180 grados */
 }
+
+.imagen-noticia {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.imagen-noticia imagen4{
+    width: 400px;
+    height: 200px;
+}
+
+.contenedor-links{
+    margin-left: 400px;
+    margin-top: 30px;
+    border-color: #80808033;
+    border-width: 0.01px;
+    border-style: groove;
+    border-left: none;
+    border-top: none;
+    height: 170px;
+    border-right: none;
+}
+
+.titulo-link{
+    font-size: 23px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}   
+
+.parrafo-link{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+}
+
+.titulo-noticia{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
+.parrafo-noticia{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;    
+}

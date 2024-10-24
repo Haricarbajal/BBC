@@ -59,28 +59,54 @@
         <button class="boton-navegacion">Video</button>
         <button class="boton-navegacion">Live</button>
     </div>
-    <main>
-        <news>
+
+    <body>
+        <main>
             <div style="display: flex;">
-                <div style="display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                width: 500px;">
-                    <div>
-                        <h1>hola</h1>
+                <div class="contenedor-final" style="margin-left: 150px;display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    width: 500px;gap: 15px;
+                    margin-top: 50px;" >
+                    <div style="border-color: #80808033;
+                    border-width: 0.01px;
+                    border-style: groove;
+                    border-left: none;
+                    border-top: none;
+                    height: 340px;
+                    border-right: none;"> 
+                        <img class="imagen-noticia imagen2" style="width: 275px;height: 150px;"
+                            src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/61f3/live/260aa840-91dc-11ef-89ae-5575c76d98e6.jpg.webp"
+                            alt="">
+                        <a href="https://www.bbc.com/news/articles/c1dp7xnyr51o" class="titulo-noticia" style="font-size: 20px;">labour volunteers helping<br>Harris</a>
+                        <p class="parrafo-noticia" style="font-size: 14px;">Both kamala Harris and Donald Trump are focusing<br>campainig in key
+                            battleground states this week</p>
                     </div>
                     <div>
-                        <h1>hola 2</h1>
+                        <img class="imagen-noticia imagen4"
+                            src="https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c4c7/live/176de2f0-91cf-11ef-b3c2-754b6219680e.png.webp"
+                            alt="" style="height: 350px;width: 600px">
+                        <a href="https://www.bbc.com/news/live/c1jrld1kjp3t" class="titulo-noticia">Striking boeing workers reject 35% pay rise offer</a>
+                        <p class="parrafo-noticia">Earlier, Boeing's boss warned the firm was at a crossroads as losses surged to roughly $6bn</p>
                     </div>
                     <div>
-                        <h2>hola3</h2>
+                        <img class="imagen-noticia imagen2"
+                            src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/a3ce/live/3ed904d0-91db-11ef-b3c2-754b6219680e.jpg.webp"
+                            alt="" style="width: 270px;
+    height: 170px;">
+                        <a href="https://www.bbc.com/news/articles/cd6vy79p750o" class="titulo-noticia">Inmigrant voters: The money is US politics absolutely scares me</a>
+                        <p class="parrafo-noticia">These US citizends didn't grow up in America but now they can vote here. What's different to
+                            them</p>
                     </div>
                 </div>
-                <div>
-                    <h1>hola6</h1>
+                <div class="contenedor-links">
+                    <div>
+                        <h1 class="titulo-link">Striking Boening workers<br> reject 35% pay rise offer</h1>
+                        <p class="parrafo-link">Earlier, Boening's boss warned the firm<br> was at a "crossroads" as losses surged<br> to roughly $6bn</p>
+                    </div>
                 </div>
             </div>
-        </news>
-    </main>
+        </main>
+    </body>
     <script>
         const botonNavegacion = document.querySelectorAll(".boton-navegacion");
         botonNavegacion.forEach(button => {
@@ -134,20 +160,30 @@
             {
                 "id": 1,
                 "titulo": "labour volunteers helping Harris",
-                "imagen" : "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f390/live/dd05ab20-9142-11ef-89ae-5575c76d98e6.jpg.webp",
-                "description" : "Both kamala Harris and Donald Trump are focusing on campainig in key battleground states this week"                
+                "imagen": "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f390/live/dd05ab20-9142-11ef-89ae-5575c76d98e6.jpg.webp",
+                "description": "Both kamala Harris and Donald Trump are focusing on campainig in key battleground states this week"
             },
             {
-                "id" : 2,
-                "titulo" : "Inmigrant voters: The money is US politics absolutely scares me",
-                "description" : "These US citizends didn't grow up in America but now they can vote here. What's different to them",
+                "id": 2,
+                "titulo": "Inmigrant voters: The money is US politics absolutely scares me",
+                "imagen": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/a3ce/live/3ed904d0-91db-11ef-b3c2-754b6219680e.jpg.webp",
+                "description": "These US citizends didn't grow up in America but now they can vote here. What's different to them"
             },
             {
-                "id" : 3,
-                "titulo" : "It's not for us to have shame: Gisele Pelicot takes stand in french mass rape trial",
-                "desciption" : "She tells a court she wants women who have been raped to know that it's not for us to have shame - it's for them"
+                "id": 3,
+                "titulo": "It's not for us to have shame: Gisele Pelicot takes stand in french mass rape trial",
+                "imagen": "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c4c7/live/176de2f0-91cf-11ef-b3c2-754b6219680e.png.webp",
+                "description": "She tells a court she wants women who have been raped to know that it's not for us to have shame - it's for them"
+            },
+            {
+                "id": 4,
+                "titulo": "Striking boeing workers reject 35% pay rise offer",
+                "imagen": "https://wallpapercave.com/wp/wp2574287.jpg",
+                "description": "Earlier, Boeing's boss warned the firm was at a crossroads as losses surged to roughly $6bn"
             }
+
         ]
+
     </script>
 
 </html>
