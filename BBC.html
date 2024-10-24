@@ -10,7 +10,7 @@
                 <div>
                     <span class="buscador-dialog">
                         <label for="buscar"></label>
-                        <input type="search" name="buscar" style="width: 270px;height: 42px">
+                        <input type="search" name="buscar" style="width: 234px;height: 42px; border-color: black;">
                         <img class="buscar-dialog" src="styles/lupa.jpg" alt="">
                     </span>
                 </div>
@@ -59,6 +59,28 @@
         <button class="boton-navegacion">Video</button>
         <button class="boton-navegacion">Live</button>
     </div>
+    <main>
+        <news>
+            <div style="display: flex;">
+                <div style="display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 500px;">
+                    <div>
+                        <h1>hola</h1>
+                    </div>
+                    <div>
+                        <h1>hola 2</h1>
+                    </div>
+                    <div>
+                        <h2>hola3</h2>
+                    </div>
+                </div>
+                <div>
+                    <h1>hola6</h1>
+                </div>
+            </div>
+        </news>
+    </main>
     <script>
         const botonNavegacion = document.querySelectorAll(".boton-navegacion");
         botonNavegacion.forEach(button => {
@@ -95,7 +117,7 @@
                     }
                 });
 
-                botonesMenu.addEventListener("mouseover", function(){
+                botonesMenu.addEventListener("mouseover", function () {
                     botonesMenu.style.backgroundColor = 'rgba(230, 230, 230, 0.53)';
                 });
 
@@ -104,6 +126,28 @@
         }
 
         customElements.define("custom-menu", MenuDialog)
+    </script>
+
+
+    <script>
+        const noticias = [
+            {
+                "id": 1,
+                "titulo": "labour volunteers helping Harris",
+                "imagen" : "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f390/live/dd05ab20-9142-11ef-89ae-5575c76d98e6.jpg.webp",
+                "description" : "Both kamala Harris and Donald Trump are focusing on campainig in key battleground states this week"                
+            },
+            {
+                "id" : 2,
+                "titulo" : "Inmigrant voters: The money is US politics absolutely scares me",
+                "description" : "These US citizends didn't grow up in America but now they can vote here. What's different to them",
+            },
+            {
+                "id" : 3,
+                "titulo" : "It's not for us to have shame: Gisele Pelicot takes stand in french mass rape trial",
+                "desciption" : "She tells a court she wants women who have been raped to know that it's not for us to have shame - it's for them"
+            }
+        ]
     </script>
 
 </html>
