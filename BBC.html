@@ -3,7 +3,7 @@
 <custom-menu-search>
     <div class="menu">
         <img class="imagen-menu" src="styles/lista.png" alt="">
-        <img class="imagen-busqueda" src="https://cdn-icons-png.flaticon.com/128/2319/2319177.png" alt="">
+        <img class="dialog-search transparent" src="https://cdn-icons-png.flaticon.com/128/2319/2319177.png" alt="">
         <custom-menu>
             <div class="contenedor-dialog-menu">
                 <!-- <img class="icono-cerrar" src="styles/cerrar.png" alt=""> -->
@@ -44,6 +44,40 @@
             <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script> -->
         <button type="button" class="register">Register</button>
         <button type="button" class="signin">Sign in</button>
+        
+        <custom-search>
+            <dialog>
+                <div>                    
+                    <img class="close-btn" src="styles/cerrado.png" alt="">
+                </div>
+                <input type="search" id="site-search" name="q" />
+        
+                <template>
+                    <li>
+                        <div class="flex flex-col items-center card">
+                            <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                            <div class="flex flex-col justify-between">
+                                <h5 class="item-title">
+                                    <a href="article.html?id={id}" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold; color: black;">
+                                        {value}
+                                    </a>
+                                </h5>
+                                <p class="item-description" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: normal;">Here are the biggest enterprise technology acquisitions of 2021 so
+                                    far, in reverse chronological order.
+                                </p>
+                                <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+                            </div>
+                        </div>
+                    </li>
+                </template>
+        
+                <ul id="search-results" style="list-style: none;">
+                </ul>
+            </dialog>
+        </custom-search>
+
+
+
     </div>
     <div class="barra-navegacion">
         <button class="boton-navegacion">Home</button>
@@ -63,10 +97,7 @@
     <body>
         <main>
             <div style="display: flex;">
-                <div class="contenedor-final" style="margin-left: 150px;display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    width: 500px;gap: 15px;
-                    margin-top: 50px;" >
+                <div class="contenedor-final">
                     <div style="border-color: #80808033;
                     border-width: 0.01px;
                     border-style: groove;
@@ -107,6 +138,109 @@
             </div>
         </main>
     </body>
+
+    <script>
+        const articles = [
+            {
+                "id": 1,
+                "image": "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f390/live/dd05ab20-9142-11ef-89ae-5575c76d98e6.jpg.webp",
+                "title": "labour volunteers helping Harris",
+                "description": "Both kamala Harris and Donald Trump are focusing on campainig in key battleground states this week.",
+                "date": "2023-10-17T11:00:16Z",
+                "category": "Climate"
+            },
+            {
+                "id": 2,
+                "image": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/a3ce/live/3ed904d0-91db-11ef-b3c2-754b6219680e.jpg.webp",
+                "title": "Inmigrant voters: The money is US politics absolutely scares me",
+                "description": "These US citizends didn't grow up in America but now they can vote here. What's different to them.",
+                "date": "2024-09-17T10:32:45Z",
+                "category": "Business"
+            },
+            {
+                "id": 3,
+                "image": "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c4c7/live/176de2f0-91cf-11ef-b3c2-754b6219680e.png.webp",
+                "title": "It's not for us to have shame: Gisele Pelicot takes stand in french mass rape trial",
+                "description": "She tells a court she wants women who have been raped to know that it's not for us to have shame - it's for them",
+                "date": "2024-10-15T10:30:56Z",
+                "category": "Automobile"
+            },
+            {
+                "id": 4,
+                "image": "https://wallpapercave.com/wp/wp2574287.jpg",
+                "title": "Striking boeing workers reject 35% pay rise offer",
+                "description": "Earlier, Boeing's boss warned the firm was at a crossroads as losses surged to roughly $6bn",
+                "date": "2024-10-13T10:25:24Z",
+                "category": "Automobile"
+            },
+            {
+                "id": 5,
+                "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/3e81/live/e174ad80-91d0-11ef-8581-cd31a4127fee.jpg.webp",
+                "title": "India evacuating more than a million people as Cyclone Dana nears",
+                "description": "Authorities in India are evacuating nearly 1.5 million people from the path of an approaching cyclone in the eastern states of Odisha (formerly Orissa) and West Bengal.",
+                "date": "2024-10-01T10:22:56Z",
+                "category": "Technology"
+            }
+        ]
+    
+        class CustomSearch extends HTMLElement {
+        constructor() {
+            super();
+            this.articles = articles;
+        }
+
+        connectedCallback() {
+            const dialogBtn = document.querySelector('.dialog-search');
+            const closeBtn = this.querySelector('.close-btn');
+            const dialog = this.querySelector('dialog');
+
+            dialogBtn.addEventListener('click', () => {
+                dialog.show(); // Mostrar el diálogo
+                setTimeout(() => dialog.classList.add('showing'), 10); // Activar la animación
+            });
+
+            closeBtn.addEventListener('click', () => {
+                dialog.classList.remove('showing'); // Desactivar la animación
+                setTimeout(() => dialog.close(), 500); // Esperar la animación y luego cerrar
+            });
+
+            const siteSearch = this.querySelector('#site-search');
+            siteSearch.addEventListener('input', (event) => this.search(event));
+
+            this.renderResults(''); // Muestra los resultados al cargar
+        }
+
+        search(event) {
+            event.preventDefault();
+            const term = this.querySelector('#site-search').value.toLowerCase();
+            this.renderResults(term);
+        }
+
+        renderResults(term = '') {
+            const searchResults = this.querySelector('#search-results');
+            searchResults.innerHTML = '';
+            const filteredArticles = this.articles
+                .filter(article => article.title.toLowerCase().includes(term));
+
+            const template = this.querySelector('template').content;
+            filteredArticles.map(article => {
+                const li = template.querySelector('li').cloneNode(true);
+                li.querySelector('.item-image').src = article.image;
+                li.querySelector('.item-title a').textContent = article.title;
+                li.querySelector('.item-description').textContent = article.description;
+                li.querySelector('.item-title a').href = `article.html?id=${article.id}`;
+                searchResults.appendChild(li);
+            });
+        }
+    }
+
+    customElements.define('custom-search', CustomSearch);
+    </script>
+
+
+
+
+
     <script>
         const botonNavegacion = document.querySelectorAll(".boton-navegacion");
         botonNavegacion.forEach(button => {
@@ -152,38 +286,6 @@
         }
 
         customElements.define("custom-menu", MenuDialog)
-    </script>
-
-
-    <script>
-        const noticias = [
-            {
-                "id": 1,
-                "titulo": "labour volunteers helping Harris",
-                "imagen": "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f390/live/dd05ab20-9142-11ef-89ae-5575c76d98e6.jpg.webp",
-                "description": "Both kamala Harris and Donald Trump are focusing on campainig in key battleground states this week"
-            },
-            {
-                "id": 2,
-                "titulo": "Inmigrant voters: The money is US politics absolutely scares me",
-                "imagen": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/a3ce/live/3ed904d0-91db-11ef-b3c2-754b6219680e.jpg.webp",
-                "description": "These US citizends didn't grow up in America but now they can vote here. What's different to them"
-            },
-            {
-                "id": 3,
-                "titulo": "It's not for us to have shame: Gisele Pelicot takes stand in french mass rape trial",
-                "imagen": "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c4c7/live/176de2f0-91cf-11ef-b3c2-754b6219680e.png.webp",
-                "description": "She tells a court she wants women who have been raped to know that it's not for us to have shame - it's for them"
-            },
-            {
-                "id": 4,
-                "titulo": "Striking boeing workers reject 35% pay rise offer",
-                "imagen": "https://wallpapercave.com/wp/wp2574287.jpg",
-                "description": "Earlier, Boeing's boss warned the firm was at a crossroads as losses surged to roughly $6bn"
-            }
-
-        ]
-
     </script>
 
 </html>

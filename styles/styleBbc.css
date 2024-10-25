@@ -19,7 +19,7 @@ body {
     height: 25px;
 }
 
-.imagen-busqueda {
+.dialog-search {
     margin-left: 20px;
     width: 24px;
     height: 23px;
@@ -60,7 +60,7 @@ body {
     color: white;
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 17px;  
+    padding: 17px;
     border: none;
     align-items: center;
     display: flex;
@@ -94,6 +94,10 @@ body {
     justify-content: center;
     padding: 16px;
     gap: 12px;
+    overflow: hidden;
+    /* Oculta cualquier contenido desbordado cuando se colapsa */
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    opacity: 1;
 }
 
 .boton-navegacion {
@@ -103,7 +107,7 @@ body {
     font-weight: 500;
     /* text-decoration: underline; */
     transition: all 0.3s ease-in-out;
-    /* Aquí defines la transición */
+    
 }
 
 .nuevo-boton-navegacion {
@@ -113,22 +117,25 @@ body {
     font-weight: 500;
     text-decoration: underline;
     transform: scale(1.15);
-    /* También puedes añadir transformaciones como agrandar */
     /* transition-delay: 1s; */
     transition: all 0.5s;
 }
 
-.buscador-dialog{
+.buscador-dialog {
     display: flex;
     align-items: center;
     margin-left: 12px;
 }
 
 .boton-menu-dialog {
-    border-top: 0.01px groove #80808033;  /* Borde superior */
-    border-right: none;                   /* Elimina borde derecho */
-    border-bottom: 0.01px groove #80808033; /* Borde inferior */
-    border-left: none;                    /* Elimina borde izquierdo */
+    border-top: 0.01px groove #80808033;
+    
+    border-right: none;
+    
+    border-bottom: 0.01px groove #80808033;
+    
+    border-left: none;
+    
     padding: 10px;
     text-align: start;
     font-weight: bold;
@@ -137,7 +144,7 @@ body {
     border-top: none;
 }
 
-.first-boton-dialog{
+.first-boton-dialog {
     padding: 14px;
     margin-top: 10px;
     text-align: start;
@@ -145,7 +152,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.boton-menu-dialog:hover{
+.boton-menu-dialog:hover {
     background-color: rgba(230, 230, 230, 0.762);
 }
 
@@ -178,15 +185,19 @@ body {
     transform: translateX(0);
 }
 
-.mostrar-contenedor{
-    transform: translateX(303px); /* Cuando se muestra, desliza hacia la derecha */
+.mostrar-contenedor {
+    transform: translateX(303px);
+   
 }
 
 .imagen-menu {
-    transition: transform 0.3s ease; /* Transición suave para la rotación */
+    transition: transform 0.3s ease;
+    
 }
+
 .rotar {
-    transform: rotate(180deg); /* Rotación de 180 grados */
+    transform: rotate(180deg);
+    
 }
 
 .imagen-noticia {
@@ -195,12 +206,12 @@ body {
     object-fit: cover;
 }
 
-.imagen-noticia imagen4{
+.imagen-noticia imagen4 {
     width: 400px;
     height: 200px;
 }
 
-.contenedor-links{
+.contenedor-links {
     margin-left: 400px;
     margin-top: 30px;
     border-color: #80808033;
@@ -212,19 +223,19 @@ body {
     border-right: none;
 }
 
-.titulo-link{
+.titulo-link {
     font-size: 23px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
-}   
+}
 
-.parrafo-link{
+.parrafo-link {
     font-size: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: lighter;
 }
 
-.titulo-noticia{
+.titulo-noticia {
     text-decoration: none;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -232,8 +243,95 @@ body {
     color: black;
 }
 
-.parrafo-noticia{
+.parrafo-noticia {
     font-size: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;    
+    font-weight: lighter;
+}
+
+dialog {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    margin: 0;
+    padding: 20px;
+    width: 450px;
+    border: none;
+    background-color: #f1f1f1;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: left 1s ease;
+    margin-top: 68px;
+}
+
+dialog.showing {
+    left: 0;
+}
+
+.item-image {
+    width: 400px;
+}
+
+.close-btn {
+    background: none;
+    width: 34px;
+    height: 40px;
+    position: relative;
+    left: 46%;
+}
+
+#site-search {
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+.contenedor-final {
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+    width: 500px;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .barra-navegacion {
+        opacity: 0;
+        /* div  transparente */
+        max-height: 0;
+    }
+
+    .contenedor-final {
+        margin-left: 0;
+        grid-template-columns: repeat(1, 1fr); 
+        width: 90%; 
+        margin: 0 auto;
+    }
+
+    .contenedor-final > div {
+        border-bottom: rgba(196, 195, 195, 0.684);
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-color: #80808033;
+        border-width: 0.01px; 
+        border-style: groove;
+        border-left: none; 
+        border-top: none; 
+        height: auto; 
+        text-align: center;
+        padding: 10px; 
+    }
+
+    .contenedor-final img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .titulo-noticia {
+        font-size: 18px; 
+    }
+
+    .parrafo-noticia {
+        font-size: 14px; 
+    }
 }
