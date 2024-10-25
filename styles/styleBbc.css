@@ -219,7 +219,7 @@ body {
     border-style: groove;
     border-left: none;
     border-top: none;
-    height: 170px;
+    height: 213px;
     border-right: none;
 }
 
@@ -259,7 +259,7 @@ dialog {
     border: none;
     background-color: #f1f1f1;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: left 1s ease;
+    transition: left 700ms ease;
     margin-top: 68px;
 }
 
