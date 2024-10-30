@@ -81,6 +81,10 @@ const noticias = [
     }
 ];
 
+const getId = () => {
+    const searchParams = new URLSearchParams(location.search.slice(1));
+    return Number(searchParams.get('id'));
+  }
 
 class CustomSearch extends HTMLElement {
     constructor() {
@@ -123,7 +127,7 @@ class CustomSearch extends HTMLElement {
 
         const _noticias = this.noticias.filter(noticia =>
             noticia.title.toLowerCase().includes(term.toLowerCase())
-        );  
+        );
 
         const template = this.querySelector('template').content;
 
@@ -234,25 +238,22 @@ customElements.define("custom-menu", MenuDialog)
 class CustomArticle extends HTMLElement {
     constructor() {
         super();
-        this.articleId = Number(getId()); // Asegurarse que sea un número
+        this.articleId = getId();
     }
-
     connectedCallback() {
         this.render();
     }
 
     render() {
-        const article = noticias.find(article => article.id === this.articleId);
+        const article = noticias.find(article => article.id === this.articleId)
         if (article) {
+            // reemplazos de los contenidos del article
             const h1 = this.querySelector('h1');
             h1.textContent = article.title;
-            const imagen = this.querySelector("img");
-            imagen.src = article.image;
-            const description = this.querySelector("p");
-            description.textContent = article.description;
-            const time = this.querySelector("relative-time");
-            time.setAttribute('time', article.date);
 
+            // reemplazar image
+            const img = this.querySelector('img');
+            img.src = article.image;
         }
     }
 }
