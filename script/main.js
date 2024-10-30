@@ -143,6 +143,70 @@ const noticias = [
         "description": `Jurgen Klopp has defended his decision to become head of global soccer at Red Bull and explained it was difficult to take a job where "everyone is happy".The German, who left Liverpool at the end of last season, has received a lot of criticism for joining Red Bull - especially among fans of his former club Borussia Dortmund.`,
         "date": "1731229323000",
         "category": "Sport"
+    },
+    {
+        "id": 19,
+        "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/dffd/live/ebb7ebd0-9703-11ef-ba32-936fdf7b8d8a.png.webp", 
+        "title": "Spain battles deadliest flood disaster in decades as death toll rises to 95",
+        "description": `Spain is enduring its worst flooding disaster in decades, with at least 95 people dead and dozens more missing, after huge rains swept the eastern province of Valencia and beyond.`,
+        "date": "1730451723000",
+        "category": "News"
+    },
+    {
+        "id": 20,
+        "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/5824/live/7c83f810-9476-11ef-b2a3-6f95c4744c6c.jpg.webp", 
+        "title": "The bear who was a private in the Polish army",
+        "description": `A bear, famed for his love of beer, cigarettes and boxing and who was by the side of Allied troops in World War Two, has been made the subject of a play. Wojtek was adopted by the 2nd Polish Corps in 1943, after his mother was shot by hunters.`,
+        "date": "1730250327000",
+        "category": "News"
+    },
+    {
+        "id": 21,
+        "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/705e/live/be25b6f0-961f-11ef-ba4d-5b04a90bcb33.png.webp", 
+        "title": "How X users can earn thousands from US election misinformation and AI images",
+        "description": `Some users on X who spend their days sharing content that includes election misinformation, AI-generated images and unfounded conspiracy theories say they are being paid "thousands of dollars" by the social media site.`,
+        "date": "1730077527000",
+        "category": "News"
+    },
+    {
+        "id": 22,
+        "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/fb8b/live/849ded60-96ee-11ef-adc9-970c197ac134.jpg.webp", 
+        "title": "Israel strikes historic Lebanese city of Baalbek after ordering evacuation",
+        "description": `Israeli strikes have killed 19 people, including eight women, in and around Lebanon's eastern city of Baalbek, the country's health ministry said. It came after tens of thousands of residents fled the historic city in response to evacuation orders issued by the Israeli military`,
+        "date": "1728558327000",
+        "category": "News"
+    },
+    {
+        "id": 23,
+        "image": "https://ichef.bbci.co.uk/news/640/cpsprodpb/aa02/live/8b1b9170-96ed-11ef-9260-19e6a950e830.jpg.webp", 
+        "title": "This is not a Budget we want to repeat, says Reeves",
+        "description": `Chancellor Rachel Reeves has told the BBC that she hopes Labour's first Budget since taking power, which includes massive tax increases, would be a one-off."This is not the sort of Budget we would want to repeat," she told the BBC's political editor Chris Mason.`,
+        "date": "1727780727000",
+        "category": "News"
+    },
+    {
+        "id": 24,
+        "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/5870/live/e704f240-96db-11ef-91d6-57661c36bca5.jpg.webp", 
+        "title": "Scientists say climate change made Spanish floods worse",
+        "description": `While scientists are reluctant to say any single extreme event was caused by climate change, researchers have been quick to point out the role that rising temperatures have had in making the Spanish floods worse.`,
+        "date": "1709291127000",
+        "category": "News"
+    },
+    {
+        "id": 25,
+        "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/5870/live/e704f240-96db-11ef-91d6-57661c36bca5.jpg.webp", 
+        "title": "Scientists say climate change made Spanish floods worse",
+        "description": `While scientists are reluctant to say any single extreme event was caused by climate change, researchers have been quick to point out the role that rising temperatures have had in making the Spanish floods worse.`,
+        "date": "1709291127000",
+        "category": "News"
+    },
+    {
+        "id": 26,
+        "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/7b16/live/0a908850-95dd-11ef-9eb7-7b7defb4f9e7.jpg.webp", 
+        "title": "TikTok founder becomes China's richest man",
+        "description": `The surging global popularity of TikTok has seen the co-founder of its parent company, ByteDance, become China's richest person.According to a rich list produced by the Hurun Research Institute, Zhang Yiming is now worth $49.3bn (£38bn) - 43% more than in 2023.`,
+        "date": "1709723127000",
+        "category": "News"
     }
 
 ];
