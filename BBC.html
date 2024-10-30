@@ -1,93 +1,81 @@
 <link rel="stylesheet" href="styles/styleBbc.css">
 <html>
-<custom-menu-search>
-    <div class="menu">
-        <img class="imagen-menu" src="styles/lista.png" alt="">
-        <img class="dialog-search transparent" src="https://cdn-icons-png.flaticon.com/128/2319/2319177.png" alt="">
-        <custom-menu>
-            <div class="contenedor-dialog-menu">
-                <!-- <img class="icono-cerrar" src="styles/cerrar.png" alt=""> -->
-                <div>
-                    <span class="buscador-dialog">
-                        <label for="buscar"></label>
-                        <input type="search" name="buscar" style="width: 234px;height: 42px; border-color: black;">
-                        <img class="buscar-dialog" src="styles/lupa.jpg" alt="">
-                    </span>
-                </div>
-                <span class="boton-menu-dialog first-boton-dialog">Home</span>
-                <span class="boton-menu-dialog boton1">News</span>
-                <span class="boton-menu-dialog boton2">US Election</span>
-                <span class="boton-menu-dialog boton3">Sport</span>
-                <span class="boton-menu-dialog boton4">Business</span>
-                <span class="boton-menu-dialog boton5">Innovation</span>
-                <span class="boton-menu-dialog boton6">Culture</span>
-                <span class="boton-menu-dialog boton7">Arts</span>
-                <span class="boton-menu-dialog boton8">Travel</span>
-                <span class="boton-menu-dialog boton9">Earth</span>
-                <span class="boton-menu-dialog boton10">Video</span>
-                <span class="boton-menu-dialog boton11">Live</span>
-                <span class="boton-menu-dialog boton12">Audio</span>
-                <span class="boton-menu-dialog boton13">Weather</span>
-                <span class="boton-menu-dialog boton14">Newsletters</span>
+    <body>
+        <custom-menu-search>
+            <div class="menu">
+                <img class="imagen-menu" src="styles/lista.png" alt="">
+    
+                <img class="dialog-search transparent" src="https://cdn-icons-png.flaticon.com/128/2319/2319177.png" alt="">
+    
+                <custom-menu>
+                    <div class="contenedor-dialog-menu">
+                        <span class="buscador-dialog">
+                            <label for="buscar"></label>
+                            <input type="search" name="buscar" style="width: 234px;height: 42px; border-color: black;">
+                            <img class="buscar-dialog" src="styles/lupa.jpg" alt="">
+                        </span>
+                        <a class="boton-menu-dialog first-boton-dialog" href="news.html">Home</a>
+                        <span class="boton-menu-dialog boton1">News</span>
+                        <span class="boton-menu-dialog boton2">US Election</span>
+                        <a class="boton-menu-dialog boton3" href="sports.html">Sport</a>
+                        <span class="boton-menu-dialog boton4">Business</span>
+                        <span class="boton-menu-dialog boton5">Innovation</span>
+                        <span class="boton-menu-dialog boton6">Culture</span>
+                        <span class="boton-menu-dialog boton7">Arts</span>
+                        <span class="boton-menu-dialog boton8">Travel</span>
+                        <span class="boton-menu-dialog boton9">Earth</span>
+                        <span class="boton-menu-dialog boton10">Video</span>
+                        <span class="boton-menu-dialog boton11">Live</span>
+                        <span class="boton-menu-dialog boton12">Audio</span>
+                        <span class="boton-menu-dialog boton13">Weather</span>
+                        <span class="boton-menu-dialog boton14">Newsletters</span>
+                    </div>
+                </custom-menu>
+    
+                <span class="logotipo">
+                    <span class="logotipo-letra">B</span>
+                    <span class="logotipo-letra">B</span>
+                    <span class="logotipo-letra">C</span>
+                </span>
+    
+                <button type="button" class="register">Register</button>
+                <button type="button" class="signin">Sign in</button>
+    
+                <custom-search>
+                    <dialog>
+                        <img class="close-btn" src="styles/cerrado.png" alt="">
+                        <input type="search" id="site-search" name="q" />
+    
+                        <template>
+                            <li>
+                                <div class="flex flex-col items-center card">
+                                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                                    <div class="flex flex-col justify-between">
+                                        <h5 class="item-title">
+                                            <a href="noticia.html?id={id}">{value}</a>
+                                        </h5>
+                                        <p class="item-description">Descripción aquí.</p>
+                                        <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200"></relative-time>
+                                    </div>
+                                </div>
+                            </li>
+                        </template>
+    
+                        <ul id="search-results" style="list-style: none;"></ul>
+                    </dialog>
+                </custom-search>
             </div>
-        </custom-menu>
-        <span class="logotipo">
-            <span class="logotipo-letra">B</span>
-            <span class="logotipo-letra">B</span>
-            <span class="logotipo-letra">C</span>
-        </span>
-        <!-- <meta name="appleid-signin-client-id" content="[CLIENT_ID]">
-                <meta name="appleid-signin-scope" content="[SCOPES]">
-                <meta name="appleid-signin-redirect-uri" content="[REDIRECT_URI]">
-                <meta name="appleid-signin-state" content="[STATE]">
-                <div id="appleid-signin" class="signin-button" data-color="black" data-border="true" data-type="sign-in"></div>
-                <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script> -->
-        <button type="button" class="register">Register</button>
-        <button type="button" class="signin">Sign in</button>
+        </custom-menu-search>
+    </body>
 
-        <custom-search>
-            <dialog>
-                <div>
-                    <img class="close-btn" src="styles/cerrado.png" alt="">
-                </div>
-                <input type="search" id="site-search" name="q" />
-
-                <template>
-                    <li>
-                        <div class="flex flex-col items-center card">
-                            <img class="object-cover item-image"
-                                src="https://flowbite.com/docs/images/blog/image-4.jpg">
-                            <div class="flex flex-col justify-between">
-                                <h5 class="item-title">
-                                    <a href="noticia.html?id={id}"
-                                        style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold; color: black;">
-                                        {value}
-                                    </a>
-                                </h5>
-                                <p class="item-description"
-                                    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: normal;">
-                                    Here are the biggest enterprise technology acquisitions of 2021 so
-                                    far, in reverse chronological order.
-                                </p>
-                                <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
-                            </div>
-                        </div>
-                    </li>
-                </template>
-
-                <ul id="search-results" style="list-style: none;">
-                </ul>
-            </dialog>
-        </custom-search>
-
-
-
-    </div>
     <div class="barra-navegacion">
-        <button class="boton-navegacion"><a href="file:///c%3A/Users/Hari/Documents/TareaDInter/BBC.html" style="text-decoration: none; color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Home</a></button>
-        <button class="boton-navegacion"><a href="file:///c%3A/Users/Hari/Documents/TareaDInter/BBC.html" style="text-decoration: none; color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">News</a></button>
+        <button class="boton-navegacion"><a href="file:///c%3A/Users/Hari/Documents/TareaDInter/BBC.html"
+                style="text-decoration: none; color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Home</a></button>
+        <button class="boton-navegacion"><a href="file:///c%3A/Users/Hari/Documents/TareaDInter/BBC.html"
+                style="text-decoration: none; color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">News</a></button>
         <button class="boton-navegacion">Us Election</button>
-        <button class="boton-navegacion"><a href="file:///c%3A/Users/Hari/Documents/TareaDInter/sports.html" style="text-decoration: none; color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Sports</a></button>
+        <button class="boton-navegacion"><a href="file:///c%3A/Users/Hari/Documents/TareaDInter/sports.html"
+                style="text-decoration: none; color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Sports</a></button>
         <button class="boton-navegacion">Business</button>
         <button class="boton-navegacion">Innovation</button>
         <button class="boton-navegacion">Culture</button>
@@ -104,7 +92,8 @@
                 src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/221e/live/9574e7f0-939d-11ef-9504-b516e8b5f45f.jpg"
                 alt="">
             <h1 class="title">
-                <a href="noticia.html?id=1">Harris rallies with Beyoncé as Trump<br> shares his 'biggest mistake' with Joe<br>
+                <a href="noticia.html?id=1">Harris rallies with Beyoncé as Trump<br> shares his 'biggest mistake' with
+                    Joe<br>
                     Rogan</a>
             </h1>
             <p class="description">
@@ -120,7 +109,8 @@
                 <a href="noticia.html?id=2">Tariffs hurt his business. He's voting for Trump anyway
                 </a>
             </h1>
-            <p class="description">Vice-President Kamala Harris has hit<br>out at Donald Trump's campaign rallyz<br>in New York on Sunday
+            <p class="description">Vice-President Kamala Harris has hit<br>out at Donald Trump's campaign rallyz<br>in
+                New York on Sunday
         </div>
         <div class="grid-item text-left">
             <img />
@@ -128,9 +118,10 @@
                 <a href="noticia.html?id=3">Omoda E5 in Noble trim - pictures</a>
             </h1>
             <p class="description">Lorem San Francisco Chiba Kowloon otakub silent fetishism<br>
-                monofilament girl marketing man courier denim hacker<br> wristwatch rebar. Cartel range-rover meta-assault<br>
+                monofilament girl marketing man courier denim hacker<br> wristwatch rebar. Cartel range-rover
+                meta-assault<br>
                 corrupted numinous tube augmented reality.3D-printed<br>
-                boat sub-orbital wonton soup corporation bicycle<br> 
+                boat sub-orbital wonton soup corporation bicycle<br>
                 franchise. Tower dolphin 8-bit drone physical<br>
                 order-flow garage girl denim crypto-savant vinyl.<br>
                 DIY wristwatch office physical dissidentBASE jump<br>computer.</p>
@@ -140,9 +131,11 @@
                 src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/e970/live/8d83cdb0-9512-11ef-8e6d-e3e64e16c628.jpg.webp"
                 alt="">
             <h1 class="title">
-                <a href="noticia.html?id=4">Backlash after comedian at Trump<br>rally calls Puerto Rico 'island of garbage'</a>
+                <a href="noticia.html?id=4">Backlash after comedian at Trump<br>rally calls Puerto Rico 'island of
+                    garbage'</a>
             </h1>
-            <p class="description">A comedian at a Donald Trump rally called Puerto Rico a <br>"floating island of garbage",sparking fury from<br> Republicans and Democrats and accusations of racism.</p>
+            <p class="description">A comedian at a Donald Trump rally called Puerto Rico a <br>"floating island of
+                garbage",sparking fury from<br> Republicans and Democrats and accusations of racism.</p>
         </div>
         <div class="grid-item text-left">
             <img class="imagen-grid"
@@ -152,7 +145,8 @@
                 <a href="noticia.html?id=5">India evacuating more than a million<br>people as Cyclone Dana nears
                 </a>
             </h1>
-            <p class="description">Authorities in India are evacuating nearly 1.5 <br>million people from the path of an<br> approaching cyclone in the eastern states<br>of Odisha (formerly Orissa) and West Bengal.</p>
+            <p class="description">Authorities in India are evacuating nearly 1.5 <br>million people from the path of
+                an<br> approaching cyclone in the eastern states<br>of Odisha (formerly Orissa) and West Bengal.</p>
         </div>
         <div class="grid-item text-left">
             <img />
@@ -169,13 +163,13 @@
                 dissidentBASE jump computer.</p>
         </div>
         <div class="grid-item text-left">
-            <img class="imagen-grid"
-                src="https://ichef.bbci.co.uk/images/ic/1024xn/p0jzgv06.jpg.webp"
-                alt="">
+            <img class="imagen-grid" src="https://ichef.bbci.co.uk/images/ic/1024xn/p0jzgv06.jpg.webp" alt="">
             <h1 class="title">
-                <a href="noticia.html?id=7">An Irish banjo virtuoso's guide to<br>the best traditional Irish music<br>experiences in Galway</a>
+                <a href="noticia.html?id=7">An Irish banjo virtuoso's guide to<br>the best traditional Irish
+                    music<br>experiences in Galway</a>
             </h1>
-            <p class="description">Galway, with its narrow medieval streets, vibrant pub<br>culture and unique brand of craic (lively fun),<br>also boasts one of Ireland's best<br>music scenes.</p>
+            <p class="description">Galway, with its narrow medieval streets, vibrant pub<br>culture and unique brand of
+                craic (lively fun),<br>also boasts one of Ireland's best<br>music scenes.</p>
         </div>
         <div class="grid-item text-left">
             <img class="imagen-grid"
@@ -184,7 +178,8 @@
             <h1 class="title">
                 <a href="noticia.html?id=8">Tariffs hurt his business. He's<br>voting for Trump anyway</a>
             </h1>
-            <p class="description">Donald Trump's call for sweeping tariffs is<br>resonating, as protectionism gains<br>steam in the US.</p>
+            <p class="description">Donald Trump's call for sweeping tariffs is<br>resonating, as protectionism
+                gains<br>steam in the US.</p>
         </div>
         <div class="grid-item text-left">
             <h1 class="title">

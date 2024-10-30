@@ -1,0 +1,213 @@
+<link rel="stylesheet" href="styles/styleBbc.css">
+<html>
+
+<custom-search>
+    <div class="menu">
+        <img class="imagen-menu" src="styles/lista.png" alt="">
+        <img class="dialog-search transparent" src="https://cdn-icons-png.flaticon.com/128/2319/2319177.png" alt="">
+        <custom-menu>
+            <div class="contenedor-dialog-menu">
+                <!-- <img class="icono-cerrar" src="styles/cerrar.png" alt=""> -->
+                <div>
+                    <span class="buscador-dialog">
+                        <label for="buscar"></label>
+                        <input type="search" name="buscar" style="width: 234px;height: 42px; border-color: black;">
+                        <img class="buscar-dialog" src="styles/lupa.jpg" alt="">
+                    </span>
+                </div>
+                <span class="boton-menu-dialog first-boton-dialog">Home</span>
+                <span class="boton-menu-dialog boton1">News</span>
+                <span class="boton-menu-dialog boton2">US Election</span>
+                <a class="boton-menu-dialog boton3"
+                    href="file:///c%3A/Users/Hari/Documents/TareaDInter/sports.html">Sport</a>
+                <span class="boton-menu-dialog boton4">Business</span>
+                <span class="boton-menu-dialog boton5">Innovation</span>
+                <span class="boton-menu-dialog boton6">Culture</span>
+                <span class="boton-menu-dialog boton7">Arts</span>
+                <span class="boton-menu-dialog boton8">Travel</span>
+                <span class="boton-menu-dialog boton9">Earth</span>
+                <span class="boton-menu-dialog boton10">Video</span>
+                <span class="boton-menu-dialog boton11">Live</span>
+                <span class="boton-menu-dialog boton12">Audio</span>
+                <span class="boton-menu-dialog boton13">Weather</span>
+                <span class="boton-menu-dialog boton14">Newsletters</span>
+                <span class="logotipo">
+                    <span class="logotipo-letra">B</span>
+                    <span class="logotipo-letra">B</span>
+                    <span class="logotipo-letra">C</span>
+                </span>
+            </div>
+        </custom-menu>
+        <!-- <meta name="appleid-signin-client-id" content="[CLIENT_ID]">
+                <meta name="appleid-signin-scope" content="[SCOPES]">
+                <meta name="appleid-signin-redirect-uri" content="[REDIRECT_URI]">
+                <meta name="appleid-signin-state" content="[STATE]">
+                <div id="appleid-signin" class="signin-button" data-color="black" data-border="true" data-type="sign-in"></div>
+                <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script> -->
+        <!-- <button type="button" class="register">Register</button>
+        <button type="button" class="signin">Sign in</button> -->
+
+        <dialog>
+            <div>
+                <img class="close-btn" src="styles/cerrado.png" alt="">
+            </div>
+            <input type="search" id="site-search" name="q" />
+
+            <template>
+                <li>
+                    <div class="flex flex-col items-center card">
+                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                        <div class="flex flex-col justify-between">
+                            <h5 class="item-title">
+                                <a href="noticia.html?id={id}"
+                                    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold; color: black;">
+                                    {value}
+                                </a>
+                            </h5>
+                            <p class="item-description"
+                                style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: normal;">
+                                Here are the biggest enterprise technology acquisitions of 2021 so
+                                far, in reverse chronological order.
+                            </p>
+                            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+                        </div>
+                    </div>
+                </li>
+            </template>
+
+            <ul id="search-results">
+            </ul>
+        </dialog>
+</custom-search>
+
+
+
+</div>
+<div class="barra-navegacion">
+    <button class="boton-navegacion"><a href="file:///c%3A/Users/Hari/Documents/TareaDInter/BBC.html"
+            style="text-decoration: none; color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Home</a></button>
+    <button class="boton-navegacion"><a href="file:///c%3A/Users/Hari/Documents/TareaDInter/BBC.html"
+            style="text-decoration: none; color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">News</a></button>
+    <button class="boton-navegacion">Us Election</button>
+    <button class="boton-navegacion"><a href="file:///c%3A/Users/Hari/Documents/TareaDInter/sports.html"
+            style="text-decoration: none; color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Sports</a></button>
+    <button class="boton-navegacion">Business</button>
+    <button class="boton-navegacion">Innovation</button>
+    <button class="boton-navegacion">Culture</button>
+    <button class="boton-navegacion">Arts</button>
+    <button class="boton-navegacion">Travel</button>
+    <button class="boton-navegacion">Earth</button>
+    <button class="boton-navegacion">Video</button>
+    <button class="boton-navegacion">Live</button>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item text-left">
+        <img class="imagen-grid"
+            src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/221e/live/9574e7f0-939d-11ef-9504-b516e8b5f45f.jpg"
+            alt="">
+        <h1 class="title">
+            <a href="noticia.html?id=1">Harris rallies with Beyoncé as Trump shares his 'biggest mistake' with Joe
+                Rogan</a>
+        </h1>
+        <p class="description">
+            Donald Trump is speaking to a crowd of supporters in<br>
+            Novi, Michigan, a Detroit suburb.
+        </p>
+    </div>
+    <div class="grid-item text-left">
+        <img class="imagen-grid"
+            src="https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/91b4/live/77ca3090-9526-11ef-9504-b516e8b5f45f.jpg.webp"
+            style="width: 600px;" alt="">
+        <h1 class="title">
+            <a href="noticia.html?id=2">Tariffs hurt his business. He's voting for Trump anyway
+            </a>
+        </h1>
+        <p class="description">Vice-President Kamala Harris has hit<br>out at Donald Trump's campaign rallyz<br>in
+            New York on Sunday
+    </div>
+    <div class="grid-item text-left">
+        <img />
+        <h1 class="title">
+            <a href="noticia.html?id=3">Omoda E5 in Noble trim - pictures</a>
+        </h1>
+        <p class="description">Lorem San Francisco Chiba Kowloon otakub silent fetishism<br>
+            monofilament girl marketing man courier denim hacker<br> wristwatch rebar. Cartel range-rover
+            meta-assault<br>
+            corrupted numinous tube augmented reality.3D-printed<br>
+            boat sub-orbital wonton soup corporation bicycle<br>
+            franchise. Tower dolphin 8-bit drone physical<br>
+            order-flow garage girl denim crypto-savant vinyl.<br>
+            DIY wristwatch office physical dissidentBASE jump<br>computer.</p>
+    </div>
+    <div class="grid-item text-left">
+        <img class="imagen-grid"
+            src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/e970/live/8d83cdb0-9512-11ef-8e6d-e3e64e16c628.jpg.webp"
+            alt="">
+        <h1 class="title">
+            <a href="noticia.html?id=4">Backlash after comedian at Trump<br>rally calls Puerto Rico 'island of
+                garbage'</a>
+        </h1>
+        <p class="description">A comedian at a Donald Trump rally called Puerto Rico a <br>"floating island of
+            garbage",sparking fury from<br> Republicans and Democrats and accusations of racism.</p>
+    </div>
+    <div class="grid-item text-left">
+        <img class="imagen-grid"
+            src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/3e81/live/e174ad80-91d0-11ef-8581-cd31a4127fee.jpg.webp"
+            alt="">
+        <h1 class="title">
+            <a href="noticia.html?id=5">India evacuating more than a million<br>people as Cyclone Dana nears
+            </a>
+        </h1>
+        <p class="description">Authorities in India are evacuating nearly 1.5 <br>million people from the path of
+            an<br> approaching cyclone in the eastern states<br>of Odisha (formerly Orissa) and West Bengal.</p>
+    </div>
+    <div class="grid-item text-left">
+        <img />
+        <h1 class="title">
+            <a href="noticia.html?id=6">Lorem title</a>
+        </h1>
+        <p class="description">Lorem San Francisco Chiba Kowloon otaku silent<br>
+            fetishism monofilament girl marketing man courier denim hacker<br>
+            wristwatch rebar.Cartel range-rover meta-assault corrupted<br>
+            numinous tube augmented reality. 3D-printed boat sub-orbital <br>
+            wonton soup corporation bicycle franchise. Tower dolphin <br>
+            8-bit drone physical order-flow garage girl denim <br>
+            crypto-savant vinyl. DIY wristwatch office physical <br>
+            dissidentBASE jump computer.</p>
+    </div>
+    <div class="grid-item text-left">
+        <img class="imagen-grid" src="https://ichef.bbci.co.uk/images/ic/1024xn/p0jzgv06.jpg.webp" alt="">
+        <h1 class="title">
+            <a href="noticia.html?id=7">An Irish banjo virtuoso's guide to<br>the best traditional Irish
+                music<br>experiences in Galway</a>
+        </h1>
+        <p class="description">Galway, with its narrow medieval streets, vibrant pub<br>culture and unique brand of
+            craic (lively fun),<br>also boasts one of Ireland's best<br>music scenes.</p>
+    </div>
+    <div class="grid-item text-left">
+        <img class="imagen-grid"
+            src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/1fd3/live/5cebfca0-908e-11ef-a624-634f82a66078.jpg.webp"
+            alt="">
+        <h1 class="title">
+            <a href="noticia.html?id=8">Tariffs hurt his business. He's<br>voting for Trump anyway</a>
+        </h1>
+        <p class="description">Donald Trump's call for sweeping tariffs is<br>resonating, as protectionism
+            gains<br>steam in the US.</p>
+    </div>
+    <div class="grid-item text-left">
+        <h1 class="title">
+            <a href="noticia.html?id=9">Lorem title</a>
+        </h1>
+        <p class="description">Lorem San Francisco Chiba Kowloon otaku silent <br>
+            fetishism monofilament girl marketing man courier denim hacker <br>
+            wristwatch rebar. Cartel range-rover meta-assault corrupted <br>
+            numinous tube augmented reality.3D-printed boat sub-orbital <br>
+            wonton soup corporation bicycle franchise. Tower dolphin 8-bit<br>
+            drone physical order-flow garage girl denim crypto-savant vinyl.<br>
+            DIY wristwatch office physical dissident BASE jump computer.</p>
+    </div>
+</div>
+<script src="script/main.js"></script>
+
+</html>

@@ -1,105 +1,86 @@
-
 const noticias = [
     {
         "id": 1,
         "image": "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f390/live/dd05ab20-9142-11ef-89ae-5575c76d98e6.jpg.webp",
-        "title": "labour volunteers helping Harris",
-        "description": `It's 10 days to go until election day, and the race couldn't be tighter - welcome back to our live US election coverage.
-
-Last night, Kamala Harris appeared alongside singer Beyoncé at a rally in Houston, Texas.
-
-Laying her cards down (down, down, down), Harris made her pitch to some 30,000 people gathered at the event, according to her campaign.
-
-After Trump spoke at a rally in Traverse City, in the swing state of Michigan, last night, his highly-anticipated interview with podcaster Joe Rogan dropped.
-
-During the three-hour long episode, Trump revealed his "biggest mistake" while in office was hiring "bad people or disloyal people" and named his former chief of staff John Kelly and former national security adviser John Bolton as examples.
-
-Both men have been critical of Trump this election cycle and have advised against supporting a second Trump term.
-
-On the penultimate weekend of the campaign, Harris and Trump are pitching to voters in Michigan and Pennsylvania - we'll have all the latest right here.`
-        ,
+        "title": "Labour Volunteers Helping Harris",
+        "description": "It's 10 days to go until election day, and the race couldn't be tighter - welcome back to our live US election coverage.",
         "date": "2023-10-17T11:00:16Z",
-        "category": "Climate"
+        "category": "News"
     },
     {
         "id": 2,
         "image": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/2a2a/live/e36c28f0-950b-11ef-9504-b516e8b5f45f.jpg",
-        "title": "Members of Trump's party in Florida have hit out at comments about Puerto Rico by comedian Tony Hinchcliffe.  ",
-        "description": `Vice-President Kamala Harris has hit out at Donald Trump's campaign rally in New York on Sunday, during which a comedian garnered bipartisan backlash for calling US territory Puerto Rico a "floating island of garbage".
-
-Trump is "focused and actually fixated on his grievances, on himself and on dividing our country", she tells reporters gathered on the tarmac as she boards a flight to campaign in Michigan, in what are her first public comments on the rally.
-
-"Nothing about what he is saying that is actually going to support the aspirations, the dreams and the ambitions of the American people," Harris says of her Republican rival.
-
-Americans are "tired" of division and want a president who is "uplifting the people", she adds.
-
-Harris also talks about her own commitment to "paying attention to the needs" of Puerto Rico, including promising to set up a task force focused on the island.
-
-The Trump campaign has distanced itself from Hinchcliffe's comments, saying they "do not reflect" Trump's views.`
-        ,
+        "title": "Backlash Over Comments About Puerto Rico by Comedian",
+        "description": "Vice-President Kamala Harris criticized Donald Trump's rally in New York, where a comedian referred to Puerto Rico as a 'floating island of garbage'.",
         "date": "2024-09-17T10:32:45Z",
-        "category": "Business"
+        "category": "News"
     },
     {
         "id": 3,
         "image": "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c4c7/live/176de2f0-91cf-11ef-b3c2-754b6219680e.png.webp",
-        "title": "It's not for us to have shame: Gisele Pelicot takes stand in french mass rape trial",
-        "description": "She tells a court she wants women who have been raped to know that it's not for us to have shame - it's for them",
+        "title": "Gisele Pelicot's Stand in French Mass Rape Trial",
+        "description": "Gisele Pelicot tells the court that women who have been raped should not feel shame - it's the perpetrators who should.",
         "date": "2024-10-15T10:30:56Z",
-        "category": "Automobile"
+        "category": "News"
     },
     {
         "id": 4,
         "image": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/e970/live/8d83cdb0-9512-11ef-8e6d-e3e64e16c628.jpg.webp",
-        "title": "Backlash after comedian at Trump rally calls Puerto Rico 'island of garbage",
-        "description": `A comedian at a Donald Trump rally called Puerto Rico a "floating island of garbage", sparking fury from Republicans and Democrats and accusations of racism.
-
-The comic, Tony Hinchcliffe, was among the speakers at the Madison Square Garden in New York on Sunday. He also made a series of jokes that leant on racist stereotypes.
-
-A Trump adviser distanced the former president from the Puerto Rico joke, which was also denounced by Trump's Democratic rival, Kamala Harris. Harris herself was the target of another Trump warm-up speaker who also sparked controversy.
-
-The furore came as one of the world's top Latin celebrities, Puerto Rican rapper Bad Bunny, endorsed Harris for president.`,
+        "title": "Comedian Calls Puerto Rico 'Island of Garbage' at Trump Rally",
+        "description": "Comedian Tony Hinchcliffe's remarks at a Trump rally sparked outrage from both Republicans and Democrats, leading to accusations of racism.",
         "date": "2024-10-13T10:25:24Z",
-        "category": "Automobile"
+        "category": "News"
     },
     {
         "id": 5,
         "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/3e81/live/e174ad80-91d0-11ef-8581-cd31a4127fee.jpg.webp",
-        "title": "India evacuating more than a million people as Cyclone Dana nears",
-        "description": "Authorities in India are evacuating nearly 1.5 million people from the path of an approaching cyclone in the eastern states of Odisha (formerly Orissa) and West Bengal.",
+        "title": "India Evacuates Millions as Cyclone Dana Approaches",
+        "description": "Authorities in India are evacuating nearly 1.5 million people from the path of an approaching cyclone in the eastern states of Odisha and West Bengal.",
         "date": "2024-10-01T10:22:56Z",
-        "category": "Technology"
+        "category": "News"
     },
     {
         "id": 6,
         "image": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/c509/live/f5610bc0-931c-11ef-b22c-69d6fbdd7891.jpg.webp",
-        "title": "Mining guiants sign $30bn",
-        "description": "The dam collapse released toxic waste and mud, which flooded nearby towns, rivers and forests",
+        "title": "Mining Giants Sign $30bn Deal",
+        "description": "A dam collapse released toxic waste and mud, flooding nearby towns, rivers, and forests.",
         "date": "2024-10-01T10:22:56Z",
-        "category": "Technology"
+        "category": "News"
     },
     {
         "id": 7,
         "image": "https://ichef.bbci.co.uk/images/ic/1024xn/p0jzgv06.jpg.webp",
-        "title": "An Irish banjo virtuoso's guide to the best traditional Irish music experiences in Galway",
-        "description": "Galway, with its narrow medieval streets, vibrant pub culture and unique brand of craic (lively fun), also boasts one of Ireland's best music scenes.",
+        "title": "Guide to Traditional Irish Music Experiences in Galway",
+        "description": "Galway, known for its vibrant pub culture and lively atmosphere, is home to one of Ireland's best music scenes.",
         "date": "2024-10-01T10:22:56Z",
-        "category": "Technology"
+        "category": "Culture"
     },
     {
         "id": 8,
         "image": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/1fd3/live/5cebfca0-908e-11ef-a624-634f82a66078.jpg.webp",
-        "title": "Tariffs hurt his business. He's voting for Trump anyway",
-        "description": `For almost 35 years, Wyoming entrepreneur Alan Chadwick has run his business importing clothing from China and selling the Western-style gear to stores serving "working cowboys" in the US.
-        Now, as former President Donald Trump campaigns on a pledge to hit all goods coming into the country with a 10%-20% tariff, or border tax, which would rise to 60% for goods from China, Chadwick is having to drastically rethink his strategy.
-        The 66-year-old has been exploring moving manufacturing of his products, like wool shirts with snaps and canvas jackets, to India or Pakistan - or perhaps closing his Wyoming Traders business, which employs 16 people, and retiring altogether.
-        Chadwick said tariffs were a "tax on the American people" and warned that the expense for a company like his of opening a factory in the US was unrealistic.
-        But as he prepares to cast his ballot, he expects to swallow his qualms about tariffs in favour of other priorities, such as illegal immigration and opposition to abortion.
-        "I will vote for Trump even though he's going to hurt our company if he does what he says he's going to do," he said.`,
+        "title": "Tariffs Hurt His Business, Yet He's Voting for Trump",
+        "description": "Wyoming entrepreneur Alan Chadwick is grappling with Trump's proposed tariffs while considering his voting priorities.",
         "date": "2024-10-01T10:22:56Z",
-        "category": "Technology"
+        "category": "News"
+    },
+    {
+        "id": 9,
+        "image": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/f46c/live/a846eef0-95cd-11ef-90df-3f1823a91773.jpg",
+        "title": "Ballon d'Or Reaction & Man Utd Manager Latest",
+        "description": "Vincent Garcia from France Football discusses Vinicius Jr's near win at the 2024 Ballon d'Or ceremony in Paris.",
+        "date": "2024-10-01T10:22:56Z",
+        "category": "Sport"
+    },
+    {
+        "id": 10,
+        "image": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/f46c/live/a846eef0-95cd-11ef-90df-3f1823a91773.jpg",
+        "title": "Ballon d'Or Reaction & Man Utd Manager Latest",
+        "description": "Vincent Garcia discusses the factors affecting Vinicius Jr's chances at the 2024 Ballon d'Or ceremony.",
+        "date": "2024-10-01T10:22:56Z",
+        "category": "Sport"
     }
-]
+];
+
 
 class CustomSearch extends HTMLElement {
     constructor() {
@@ -109,57 +90,63 @@ class CustomSearch extends HTMLElement {
 
     connectedCallback() {
         const dialogBtn = document.querySelector('.dialog-search');
-        const closeBtn = this.querySelector('.close-btn');
         const dialog = this.querySelector('dialog');
+        const closeBtn = this.querySelector('.close-btn');
 
+        // Show the dialog as a modal
         dialogBtn.addEventListener('click', () => {
-            dialog.show(); // Mostrar el diálogo
-            setTimeout(() => dialog.classList.add('showing'), 10); // Activar la animación
+            dialog.showModal();
         });
 
+        // Close the dialog when clicking the close button
         closeBtn.addEventListener('click', () => {
-            dialog.classList.remove('showing'); // Desactivar la animación
-            setTimeout(() => dialog.close(), 500); // Esperar la animación y luego cerrar
+            dialog.close();
         });
 
+        // Event to perform the search
         const siteSearch = this.querySelector('#site-search');
         siteSearch.addEventListener('input', (event) => this.search(event));
 
-        this.renderResults(''); // Muestra los resultados al cargar
+        this.renderResults(''); // Initial render with empty search term
     }
 
     search(event) {
         event.preventDefault();
         const siteSearch = this.querySelector('#site-search');
         const term = siteSearch.value;
-        this.renderResults(term);
+        this.renderResults(term); // Call renderResults with the search term
     }
 
     renderResults(term = '') {
-        const ul = this.querySelector("#search-results");
-        ul.innerHTML = '';
-        const noticia = this.noticias
-            .filter(articulo => articulo.title.toLowerCase().includes(term.toLowerCase()))
+        const searchResults = this.querySelector('#search-results');
+        searchResults.innerHTML = ''; // Clear previous results
+
+        const _noticias = this.noticias.filter(noticia =>
+            noticia.title.toLowerCase().includes(term.toLowerCase())
+        );  
 
         const template = this.querySelector('template').content;
 
-        noticia.map(insertar => {
-            const li = template.querySelector("li").cloneNode(true)
-            li.querySelector(".card .item-image").src = insertar.image;
-            li.querySelector(".card .item-title a").textContent = insertar.title;
-            li.querySelector(".card .item-description").textContent = insertar.description;
-            li.querySelector("relative-time").setAttribute('time', insertar.date);
+        // Loop through filtered noticias and render them
+        _noticias.forEach(noticia => {
+            const li = template.querySelector('li').cloneNode(true);
+            li.querySelector('.card .item-image').src = noticia.image;
+            li.querySelector('.card .item-description').textContent = noticia.description;
+            li.querySelector('relative-time').setAttribute('time', noticia.date);
+            li.querySelector('.card .item-title a').textContent = noticia.title;
 
-            const a = li.querySelector(".card .item-title a");
-            a.href = a.href.replace('{id}', insertar.id);
+            const enlace = li.querySelector('.card .item-title a');
+            const href = enlace.href;
+            enlace.href = href.replace('{id}', noticia.id);
 
-            ul.appendChild(li);
-        })
-
+            searchResults.appendChild(li); // Append the new list item to the results
+        });
     }
 }
 
 customElements.define('custom-search', CustomSearch);
+
+
 
 
 class RelativeTime extends HTMLElement {
@@ -243,12 +230,6 @@ class MenuDialog extends HTMLElement {
     }
 }
 customElements.define("custom-menu", MenuDialog)
-
-
-// Definir getId para obtener el id desde la URL
-function getId() {
-    return new URLSearchParams(window.location.search).get("id");
-}
 
 class CustomArticle extends HTMLElement {
     constructor() {
